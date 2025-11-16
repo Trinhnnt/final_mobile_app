@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Viền gradient -->
+    <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp"/>
+
+                <gradient
+                    android:startColor="#74f0ed"
+                    android:endColor="#e9445a"
+                    android:angle="0"/>
+        </shape>
+    </item>
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <corners android:radius="8dp"/>-->
+<!--            <solid android:color="#33FFFFFF" /> &lt;!&ndash; 20% trắng &ndash;&gt;-->
+<!--        </shape>-->
+<!--    </item>-->
+    <item android:top="2dp" android:bottom="2dp" android:left="8dp" android:right="8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <!-- Dấu + trắng ở giữa -->
+    <item android:gravity="center">
+        <vector
+            android:width="22dp"
+            android:height="22dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="#000000"
+                android:pathData="M12,5v14M5,12h14"
+                android:strokeColor="#000000"
+                android:strokeWidth="6"
+                android:strokeLineCap="round" />
+        </vector>
+    </item>
+</layer-list>

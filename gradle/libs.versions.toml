@@ -1,0 +1,48 @@
+[versions]
+agp = "8.13.1"
+firebaseBom = "34.6.0"
+guava = "33.5.0-android"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+activity = "1.11.0"
+constraintlayout = "2.2.1"
+googleid = "1.1.1"
+playServicesAuth = "21.4.0"
+firebaseStorage = "22.0.1"
+firebaseFirestore = "26.0.2"
+playServicesTasks = "18.4.0"
+googleGmsGoogleServices = "4.4.4"
+playServicesTasksVersion = "18.4.0"
+playServicesBasementVersion = "18.9.0"
+firebaseFirestoreVersion = "26.0.2"
+
+[libraries]
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+androidx-camera-core = { module = "androidx.camera:camera-core", version = "1.3.4" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version = "1.3.4" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version = "1.3.4" }
+androidx-camera-video = { module = "androidx.camera:camera-video", version = "1.3.4" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version = "1.3.4" }
+
+play-services-tasks-v1810 = { module = "com.google.android.gms:play-services-tasks", version.ref = "playServicesTasksVersion" }
+tutorial-android = { group = "com.github.TutorialsAndroid", name = "GButton", version = "1.0.19" }
+play-services-auth = { module = 'com.google.android.gms:play-services-auth', version = "20.4.0" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+gms-play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestoreVersion" }
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+
