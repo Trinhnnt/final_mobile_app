@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="#40404040"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btnRecord"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#AA000000"
+            android:background="@android:color/transparent"
+            android:src="@drawable/start_record"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btnFolder"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/folder"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>
