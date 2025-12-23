@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "667471042614",
-    "project_id": "mobile-app-a123",
-    "storage_bucket": "mobile-app-a123.firebasestorage.app"
+    "project_number": "119221338424",
+    "project_id": "final-mobile-b2531",
+    "storage_bucket": "final-mobile-b2531.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:667471042614:android:66c37da5d6732069326097",
+        "mobilesdk_app_id": "1:119221338424:android:459e20540aba93fd3cc1cd",
         "android_client_info": {
           "package_name": "edu.ueh.final_android_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBBGq-XJuIbMCe0Z1Q2qhJZl06uKK_0F9Q"
+          "current_key": "AIzaSyBkl6S7mPjb7zqT0bPlrT54j_hKY1-LdDY"
         }
       ],
       "services": {

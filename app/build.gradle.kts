@@ -23,8 +23,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -36,6 +35,19 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    packaging {
+        resources {
+            excludes += setOf(
+                "META-INF/DEPENDENCIES",
+                "META-INF/NOTICE",
+                "META-INF/LICENSE",
+                "META-INF/LICENSE.txt",
+                "META-INF/NOTICE.txt",
+                "META-INF/INDEX.LIST"
+            )
+        }
     }
 }
 
@@ -50,10 +62,21 @@ dependencies {
     implementation(libs.androidx.camera.video)
     implementation(libs.androidx.camera.view)
     implementation(libs.tutorial.android)
-    implementation(libs.play.services.auth)
     implementation(libs.googleid)
     implementation(libs.gms.play.services.auth)
     implementation(libs.firebase.firestore)
+
+    implementation(libs.google.api.services.drive)
+    implementation(libs.google.api.client.android)
+    implementation(libs.google.http.client.android)
+    implementation(libs.google.http.client.gson)
+
+    implementation(libs.google.auth.library.oauth2.http)
+    implementation(libs.okhttp)
+    implementation("io.grpc:grpc-okhttp:1.77.0")
+    implementation("io.grpc:grpc-protobuf-lite:1.77.0")
+    implementation("io.grpc:grpc-stub:1.77.0")
+    implementation(libs.firebase.storage)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
