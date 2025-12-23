@@ -269,7 +269,7 @@ public class AccountFragment extends Fragment {
             @Override
             public void onSuccess(List<Video> videos) {
                 allVideo.addAll(videos);
-                showList(allVideo.stream().filter(video -> video.getAuthorId().equals(viewedUser.getId())).collect(Collectors.toList()));
+                showList(allVideo.stream().filter(video -> video.getAuthorId().equals(viewedUser == null ? accountId : viewedUser.getId())).collect(Collectors.toList()));
                 int likeCount = videos.stream().reduce(0, (a, b) ->
                         CommonUtil.currentUser.getId().equals(b.getAuthorId()) ?
                                 a + b.getLikes().size() :
