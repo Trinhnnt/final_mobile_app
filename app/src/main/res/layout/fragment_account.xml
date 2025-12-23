@@ -23,6 +23,7 @@
                 android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/avatar_border"
+                android:clipToOutline="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_foreground" />
 
@@ -87,39 +88,72 @@
                 android:textColor="@android:color/white" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/banContainer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/btnBan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Ban"
+                android:textSize="16sp"
+                android:textColor="@color/tiktok4"
+                android:background="@color/tiktok1"/>
+
+        </LinearLayout>
+
+        <!-- video nav-->
+        <LinearLayout
+            android:id="@+id/navTabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:id="@+id/tabMyVideos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="My Videos"
+                android:textSize="16sp"
+                android:textColor="@color/tiktok4"
+                android:background="@drawable/tab_active"/>
+
+            <TextView
+                android:id="@+id/tabLikedVideos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Liked"
+                android:textSize="16sp"
+                android:textColor="@color/tiktok4"
+                android:background="@drawable/tab_inactive"/>
+
+        </LinearLayout>
+
+
         <!-- Lưới video -->
-        <GridLayout
-            android:id="@+id/videoGrid"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerVideos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:columnCount="3"
-            android:orientation="horizontal">
+            android:padding="4dp" />
 
-            <!-- Mỗi item là 1 thumbnail video -->
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="1dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/video_placeholder" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="1dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/video_placeholder" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="1dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/video_placeholder" />
-        </GridLayout>
     </LinearLayout>
 </ScrollView>

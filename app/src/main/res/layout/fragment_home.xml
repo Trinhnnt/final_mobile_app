@@ -6,10 +6,69 @@
     android:background="@color/black"
     tools:context=".HomeFragment">
 
-    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/videoPage"
+    <androidx.viewpager2.widget.ViewPager2 xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/videoPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android" />
+        android:orientation="vertical" />
 
+    <!-- Search -->
+    <!--    Toggle search-->
+    <!-- Nút search toggle -->
+    <ImageButton
+        android:id="@+id/btnToggleSearch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/button_bg"
+        android:src="@drawable/outline_search_24" />
+
+    <!-- Khung search (ẩn ban đầu) -->
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tiktok3"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:paddingTop="12dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnCloseSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/outline_close_small_24" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:hint="Search..."
+            android:padding="8dp"
+            android:textColor="@color/tiktok4"
+            android:textColorHint="@color/tiktok4" />
+
+        <ImageButton
+            android:id="@+id/btnDoSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/outline_search_24" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUserSearch"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/tiktok3"
+        android:visibility="gone"/>
 </FrameLayout>
