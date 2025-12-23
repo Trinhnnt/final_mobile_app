@@ -33,16 +33,30 @@ public class MainActivity extends AppCompatActivity {
 
             int id = menuItem.getItemId();
             if (id == R.id.home) replaceFragment(new HomeFragment());
-            else if (id == R.id.account) replaceFragment(new AccountFragment());
-            else if (id == R.id.create) replaceFragment(new CreateFragment());
+            else if (id == R.id.account) {
+                if (!validateInternet()) return false;
+                replaceFragment(new AccountFragment());
+            }
+            else if (id == R.id.create) {
+                if (!validateInternet()) return false;
+                replaceFragment(new CreateFragment());
+            }
             return true;
         });
-        if (!isLoggedIn) {
+        if (CommonUtil.isInternetAvailable(this) && (!isLoggedIn || CommonUtil.currentUser == null)) {
             replaceFragment(new LoginFragment());
             binding.bottomNavigationView.setVisibility(View.GONE); // hide navigation
         } else {
             replaceFragment(new HomeFragment());
         }
+    }
+
+    private boolean validateInternet(){
+        if (CommonUtil.isInternetAvailable(this)){
+            return true;
+        }
+        Toast.makeText(this, "Please check your internet connection", Toast.LENGTH_SHORT).show();
+        return false;
     }
 
     public void replaceFragment(Fragment fragment) {
