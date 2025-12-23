@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lustrous-walker-478115-f3",
+  "private_key_id": "b04cc616c9c9d7aeb543b305cacf97cd1e3d461e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCddfSe7DOVLQe5\nSgXYLvOAgGUd/lXiIyfutCG7FEzQCzonGEvZ5r/AXHX+p1FGQcojnRpOs5vPj2Ig\n4Ttsbre/5imBXW2SBB2Y0jcT8xpUdzA6aduaBcbiZhZGXP2WwPwTEoRTrMFgSJxR\nfnkWY+PDXLCRLDyOEfzXJKkDTc6mljahOeIS5LLc7i3NgNL8xcctJ0qGh7n77cZ3\nDogSb69CEkYiphErGKiQ42Ihbre4XzJ/bGNeg5rvTaOlWTSyVCzmwpVYZ/Q/hVA5\nK0uY3SrLCOfT9fXO9mSgzrLVDryN59sHa8bUTiyPQ7I1a6Fkdxw0AeUR1FgrG2rm\nk3yImLJzAgMBAAECggEACwgaEM5MmN10RpN8kFZNwgl8zBqnCrZa1FrzaAd2kDbR\nJq8JlWUYtxHjRGmVhJ4UWuVlU/E6b9LEVbhh8Ola30txSfpxNEMsjangqPmltRg6\nnUUQWRyhf/gWBGz8aUTxBCcOdUxLqgK8TOtW8W4jJWtHhYw7W9q/w5TycGRRn5MX\nbNUy94ANInb+evVMUAhpNIHkDPJiXx3SCbuWCAa86T4KfXl0J/GK1pKEWzf1R9Yt\nKVQMXiZKX66wZ/Va5i+F/vmgaiAoUvWy9PicADPmwXsF03xic4BX25FA6fu+b6m+\nb/Pp/y3ZqPSyz3XXojzijcGTgsm7Ki5xJKRpGmRIPQKBgQDRxrF3+WAC53QkyVuM\ntnbeiDxGHKu7xj01dsybgKjeZqDhEWM5vNtJdvWZ67vwCbKqsFT71/g+6p4i3RhZ\nk0npQto7qEb58yDoENC+uLwSMfIOp7EGRFOYtnnOUNFYlW+2h8pKmWIGw3Qo/Mcg\nTQHiAaL8FluzDiKAqR1wmbTZzwKBgQDAKDFkSj9SAq76U83kGWKMmNBVzBqIV9tg\ntssKDsPH2pTXlnahfkIfc0jctuvflbnUBqrr9gSgLjg83TsJl0fOzinJBF7z0wMI\n+VkvlGQsAeS8NSaGVn0HvuRhMym2ogLFtCkVsO/WIfz9UpaPao9cOjmYT+YmnAhQ\nLwufx3MaHQKBgQDCDazD0BNJ/HQLR52B2JSznJEtRn5y0Jp0p7X0r5sHSSbPrPb+\nRT8RgZMG1PPgxAfcMAwdgJarFPw+Qgqxajf4KRiaETu/InKxWkTP+TI5HqzNc8Cl\njHVMkpixCz/tUyepUYoHYkY0/X+qHtPRhIsWV+8+hSxEwfGW1VpffEC5LwKBgQCC\n1ttKvoN/A/TA3m9C8UX5FdRFl0Q5shjeMZjusD7+xgazBPCh5aaAY68pGiRhiUGO\n7TtUj592sgH472pTjX6HgjlRdnhw7S0T3zSrAQ90J5Xn0Qj6T8myjHhU9tFgWdAp\nbhLLgj7MPzhUBPgfjx8uXTb6Tu0XPQcsEdyIXvYwwQKBgHw/ILH75tFgRuJP1qzo\nz7Bn9envRL/I/qjk00qKq+zDuw1i99DNk0AVc88hnMLpbAx6JSlZHMQOdmC+b5/n\n3NG6N4brYVdS1+1WbyeYF4uBx7BPQhTGfosNTW2Iits3L5xtnNs6MFUavbILXvPn\nCyvxv6SUSLT4lZ4wheufYDgl\n-----END PRIVATE KEY-----\n",
+  "client_email": "mobile-app@lustrous-walker-478115-f3.iam.gserviceaccount.com",
+  "client_id": "107728932760543047082",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mobile-app%40lustrous-walker-478115-f3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
